@@ -14,8 +14,8 @@ license:
   use: NonProduction
 
 image:
-  repository: replace
-  tag: replace
+  repository:  image-registry.openshift-image-registry.svc:5000/ci/mq-infra
+  tag: 0.0.18
   pullPolicy: Always
 
 queuemanager:
@@ -65,14 +65,14 @@ ini:
 securityContext:
   initVolumeAsRoot: false
 
-template:
-  pod:
-    containers:
-    - env:
-      - name: MQSNOAUT
-        value: "no"
-      name: qmgr
-      resources: {}
+# template:
+#   pod:
+#     containers:
+#     - env:
+#       - name: MQSNOAUT
+#         value: "no"
+#       name: qmgr
+#       resources: {}
 
 configmap:
   path: config
