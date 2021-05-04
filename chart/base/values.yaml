@@ -14,8 +14,8 @@ license:
   use: NonProduction
 
 image:
-  repository: replace
-  tag: replace
+     repository: "image-registry.openshift-image-registry.svc:5000/ci/mq-infra"
+    tag: "357b231"
   pullPolicy: Always
 
 queuemanager:
