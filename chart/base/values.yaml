@@ -15,7 +15,7 @@ license:
 
 image:
   repository:  image-registry.openshift-image-registry.svc:5000/ci/mq-infra
-  tag: 0.0.14
+  tag: 0.0.15
   pullPolicy: Always
 
 queuemanager:
